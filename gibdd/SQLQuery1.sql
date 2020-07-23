@@ -1,0 +1,1 @@
+﻿SELECT vod.[ФИО] , vod.[ИНН], vod.[Адрес],  narv.[Дата], narv.[Номер_авто], narv.[Регион], narv.[Статья],  nar.[Наим_наруш], narv.[Сумма] FROM  vod    inner join  car   on car.[ИНН] = vod.[ИНН]  join narv on narv.[Номер_авто]=car.[Номер_авто] join nar on  narv.[Статья]=nar.[Статья]
